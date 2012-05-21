@@ -9,9 +9,10 @@ class General extends MY_Controller{
 	
 	function index()
 	{
+		$data['title'] = "Welcome";
 		$this->content_view = "welcome_message";
 		
-		$this->_render_page();
+		$this->_render_page($data);
 	}
 }
 

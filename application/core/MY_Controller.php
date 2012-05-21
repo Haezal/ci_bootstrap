@@ -13,7 +13,7 @@ class MY_Controller extends CI_Controller{
 		parent::__construct();
 		
 		//$this->load->library('FAL_front', 'fal_front');
-		$this->load->model('Mymodel', '', TRUE);
+		//$this->load->model('Mymodel', '', TRUE);
 		$this->load->library('session');
 		$this->load->library('Breadcrumb');
 		$this->load->library('Authentication');

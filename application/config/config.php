@@ -18,7 +18,7 @@
  $config['base_url']	= 'http://'.$_SERVER['HTTP_HOST'].'/um_ci_bootstrap/';
  
  // set site name
- $config['site_name'] = "UM - CI Bootstrap";
+ $config['site_name'] = "CI Bootstrap";
 /*
 |--------------------------------------------------------------------------
 | Index File
