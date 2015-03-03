@@ -27,11 +27,11 @@ class MY_Controller extends CI_Controller{
         
         $this->controller = $this->uri->rsegment(1);
         $this->method      = $this->uri->rsegment(2);
-        $papar = dirname(APPPATH)."/application/views/".$this->controller."/v_".$this->method.".php";
+        $papar = dirname(APPPATH)."/application/views/".$this->controller."/".$this->method.".php";
         //echo $papar;
         //View Management
-		if (file_exists(dirname(APPPATH)."/application/views/".$this->controller."/v_".$this->method.".php")) {
-			$this->content_view = $this->controller."/v_".$this->method;
+		if (file_exists(dirname(APPPATH)."/application/views/".$this->controller."/".$this->method.".php")) {
+			$this->content_view = $this->controller."/".$this->method;
 		}
 		else 
 			$this->content_view = "generic"; 
